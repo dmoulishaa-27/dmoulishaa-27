@@ -1,1 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 300" width="900" height="300" xmlns:c2pa="http://c2pa.org/manifest">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#1b1035"/><stop offset="0.55" stop-color="#4a2a6e"/><stop offset="1" stop-color="#c9577f"/>
+  </linearGradient>
+  <radialGradient id="moon" cx="0.4" cy="0.4" r="0.7">
+    <stop offset="0" stop-color="#fff7e0"/><stop offset="1" stop-color="#ffd6e8"/>
+  </radialGradient>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <path id="petal" d="M0,0 C6,-9 15,-5 11,4 C8,10 2,9 0,0 Z" fill="#ffc8dd" opacity="0.9"/>
+  <clipPath id="typeclip"><rect x="60" y="150" width="0" height="40">
+    <animate attributeName="width" values="0;440;440;0" keyTimes="0;0.4;0.9;1" dur="8s" repeatCount="indefinite"/>
+  </rect></clipPath>
+</defs>
+<style>
+  .tw { animation: tw 3s ease-in-out infinite; }
+  @keyframes tw { 0%,100% { opacity:.15 } 50% { opacity:1 } }
+  .fall { animation: fall 9s linear infinite; }
+  @keyframes fall {
+    0%   { transform: translate(0,0) rotate(0deg); opacity:0 }
+    10%  { opacity:1 }
+    50%  { transform: translate(-60px,170px) rotate(200deg) }
+    90%  { opacity:1 }
+    100% { transform: translate(-120px,340px) rotate(420deg); opacity:0 }
+  }
+  .bob { animation: bob 3.5s ease-in-out infinite; }
+  @keyframes bob { 0%,100% { transform: translate(730px,140px) } 50% { transform: translate(730px,130px) } }
+  .blink { transform-box: fill-box; transform-origin: center; animation: blink 4s infinite; }
+  @keyframes blink { 0%,92%,100% { transform: scaleY(1) } 95% { transform: scaleY(.08) } }
+  .swayL { transform-origin: -48px -20px; animation: swayL 3s ease-in-out infinite; }
+  .swayR { transform-origin: 48px -20px; animation: swayR 3s ease-in-out infinite; }
+  @keyframes swayL { 0%,100% { transform: rotate(3deg) } 50% { transform: rotate(-4deg) } }
+  @keyframes swayR { 0%,100% { transform: rotate(-3deg) } 50% { transform: rotate(4deg) } }
+  .moonpulse { animation: mp 5s ease-in-out infinite; }
+  @keyframes mp { 0%,100% { opacity:.85 } 50% { opacity:1 } }
+  .sub { animation: fadeIn 3s ease-in 0.5s both; }
+  @keyframes fadeIn { from { opacity:0 } to { opacity:1 } }
+</style>
 
+<rect width="900" height="300" fill="url(#sky)"/>
+<circle cx="341" cy="46" r="1.3" fill="#fff" class="tw" style="animation-delay:2.6s;animation-duration:2.18s"/>
+<circle cx="558" cy="32" r="1.3" fill="#fff" class="tw" style="animation-delay:2.33s;animation-duration:4.27s"/>
+<circle cx="229" cy="17" r="1" fill="#fff" class="tw" style="animation-delay:1.73s;animation-duration:2.17s"/>
+<circle cx="102" cy="149" r="1.3" fill="#fff" class="tw" style="animation-delay:0.24s;animation-duration:3.41s"/>
+<circle cx="238" cy="169" r="1.8" fill="#fff" class="tw" style="animation-delay:2.33s;animation-duration:2.15s"/>
+<circle cx="609" cy="109" r="1" fill="#fff" class="tw" style="animation-delay:3.91s;animation-duration:2.12s"/>
+<circle cx="889" cy="42" r="1.3" fill="#fff" class="tw" style="animation-delay:1.68s;animation-duration:3.35s"/>
+<circle cx="594" cy="86" r="1.8" fill="#fff" class="tw" style="animation-delay:3.26s;animation-duration:2.45s"/>
+<circle cx="605" cy="154" r="1.8" fill="#fff" class="tw" style="animation-delay:0.75s;animation-duration:2.24s"/>
+<circle cx="739" cy="24" r="1.8" fill="#fff" class="tw" style="animation-delay:0.24s;animation-duration:2.51s"/>
+<circle cx="706" cy="144" r="1.3" fill="#fff" class="tw" style="animation-delay:3.11s;animation-duration:3.16s"/>
+<circle cx="474" cy="100" r="1.3" fill="#fff" class="tw" style="animation-delay:0.99s;animation-duration:2.45s"/>
+<circle cx="808" cy="70" r="1" fill="#fff" class="tw" style="animation-delay:2.3s;animation-duration:3.31s"/>
+<circle cx="361" cy="194" r="1.3" fill="#fff" class="tw" style="animation-delay:1.15s;animation-duration:4.45s"/>
+<circle cx="130" cy="139" r="1.3" fill="#fff" class="tw" style="animation-delay:0.66s;animation-duration:2.86s"/>
+<circle cx="510" cy="115" r="1" fill="#fff" class="tw" style="animation-delay:3.85s;animation-duration:2.19s"/>
+<circle cx="581" cy="154" r="1.3" fill="#fff" class="tw" style="animation-delay:1.36s;animation-duration:2.88s"/>
+<circle cx="518" cy="156" r="1.3" fill="#fff" class="tw" style="animation-delay:0.28s;animation-duration:2.23s"/>
+<circle cx="286" cy="129" r="1.8" fill="#fff" class="tw" style="animation-delay:2.66s;animation-duration:2.15s"/>
+<circle cx="728" cy="87" r="1.8" fill="#fff" class="tw" style="animation-delay:2.31s;animation-duration:3.7s"/>
+<circle cx="466" cy="80" r="1.8" fill="#fff" class="tw" style="animation-delay:1.54s;animation-duration:3.67s"/>
+<circle cx="33" cy="126" r="1.3" fill="#fff" class="tw" style="animation-delay:0.67s;animation-duration:2.29s"/>
+<circle cx="70" cy="63" r="1.3" fill="#fff" class="tw" style="animation-delay:0.52s;animation-duration:2.62s"/>
+<circle cx="410" cy="135" r="1" fill="#fff" class="tw" style="animation-delay:0.67s;animation-duration:3.0s"/>
+<circle cx="294" cy="43" r="1.3" fill="#fff" class="tw" style="animation-delay:3.46s;animation-duration:2.7s"/>
+<circle cx="435" cy="99" r="1.8" fill="#fff" class="tw" style="animation-delay:3.54s;animation-duration:4.39s"/>
+<circle cx="164" cy="29" r="1" fill="#fff" class="tw" style="animation-delay:0.61s;animation-duration:3.65s"/>
+<circle cx="22" cy="132" r="1.8" fill="#fff" class="tw" style="animation-delay:0.73s;animation-duration:2.7s"/>
+<circle cx="159" cy="115" r="1.8" fill="#fff" class="tw" style="animation-delay:1.48s;animation-duration:3.42s"/>
+<circle cx="138" cy="184" r="1.8" fill="#fff" class="tw" style="animation-delay:3.8s;animation-duration:3.64s"/>
+<circle cx="767" cy="21" r="1.3" fill="#fff" class="tw" style="animation-delay:3.6s;animation-duration:3.95s"/>
+<circle cx="706" cy="151" r="1.3" fill="#fff" class="tw" style="animation-delay:1.59s;animation-duration:2.99s"/>
+<circle cx="503" cy="170" r="1.3" fill="#fff" class="tw" style="animation-delay:0.25s;animation-duration:2.17s"/>
+<circle cx="223" cy="120" r="1" fill="#fff" class="tw" style="animation-delay:0.44s;animation-duration:3.5s"/>
+
+<circle cx="610" cy="70" r="46" fill="url(#moon)" class="moonpulse" filter="url(#glow)"/>
+<circle cx="596" cy="58" r="7" fill="#f3d7e6" opacity=".6"/><circle cx="624" cy="84" r="5" fill="#f3d7e6" opacity=".5"/>
+
+<!-- skyline -->
+<path d="M0,300 L0,262 L40,262 L40,240 L70,240 L70,268 L110,268 L110,250 L150,250 L150,272 L210,272 L210,255 L250,255 L250,278 L330,278 L330,300 Z" fill="#150c2b" opacity=".75"/>
+<path d="M900,300 L900,268 L850,268 L850,282 L800,282 L800,262 L770,262 L770,284 L690,284 L690,300 Z" fill="#150c2b" opacity=".75"/>
+
+<!-- text -->
+<text x="60" y="100" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="42" font-weight="700" fill="#fff" filter="url(#glow)">Hello, I'm Moulishaa</text>
+<g clip-path="url(#typeclip)">
+  <text x="60" y="172" font-family="Consolas, Menlo, monospace" font-size="20" fill="#ffc8dd" textLength="440" lengthAdjust="spacing">developer / dreamer / anime fan</text>
+</g>
+<rect y="154" width="3" height="24" fill="#ff8fb1">
+  <animate attributeName="x" values="60;500;500;60" keyTimes="0;0.4;0.9;1" dur="8s" repeatCount="indefinite"/>
+</rect>
+<text class="sub" x="60" y="225" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#e6d4f5">welcome to my little corner of GitHub *:.</text>
+
+<!-- girl -->
+<g class="bob">
+  <g class="swayL"><path d="M-48,-20 C-96,10 -102,80 -80,124 C-70,98 -62,62 -44,32 Z" fill="#ff8fb1"/></g>
+  <g class="swayR"><path d="M48,-20 C96,10 102,80 80,124 C70,98 62,62 44,32 Z" fill="#ff8fb1"/></g>
+  <ellipse cx="0" cy="-5" rx="62" ry="62" fill="#e86a92"/>
+  <rect x="-9" y="40" width="18" height="16" fill="#ffd9c7"/>
+  <path d="M-40,54 L40,54 L54,122 L-54,122 Z" fill="#ffffff"/>
+  <path d="M-26,54 L0,86 L26,54 Z" fill="#7fb8ff"/>
+  <path d="M-8,70 L0,64 L8,70 L0,80 Z" fill="#ff5c8a"/>
+  <ellipse cx="0" cy="0" rx="50" ry="46" fill="#ffe4d6"/>
+  <path d="M-54,-6 C-52,-66 52,-66 54,-6 C42,-30 32,-34 20,-22 C12,-38 -6,-38 -12,-22 C-24,-34 -40,-30 -54,-6 Z" fill="#ff8fb1"/>
+  <path d="M34,-50 L52,-62 L52,-40 Z M34,-50 L16,-62 L16,-40 Z" fill="#ff5c8a"/><circle cx="34" cy="-50" r="5" fill="#ff3d78"/>
+  <g class="blink"><ellipse cx="-20" cy="8" rx="7.5" ry="11" fill="#3b2a5c"/><circle cx="-17.5" cy="3" r="3.2" fill="#fff"/><circle cx="-22" cy="12" r="1.6" fill="#fff"/></g>
+  <g class="blink"><ellipse cx="20" cy="8" rx="7.5" ry="11" fill="#3b2a5c"/><circle cx="22.5" cy="3" r="3.2" fill="#fff"/><circle cx="18" cy="12" r="1.6" fill="#fff"/></g>
+  <ellipse cx="-33" cy="25" rx="8" ry="4" fill="#ff6f91" opacity=".45"/><ellipse cx="33" cy="25" rx="8" ry="4" fill="#ff6f91" opacity=".45"/>
+  <path d="M-6,28 Q0,35 6,28" stroke="#b04a6a" stroke-width="2" fill="none" stroke-linecap="round"/>
+</g>
+
+<g transform="translate(104,-20) scale(0.88)"><g class="fall" style="animation-delay:-0.0s;animation-duration:7.76s"><use href="#petal"/></g></g>
+<g transform="translate(372,-20) scale(0.97)"><g class="fall" style="animation-delay:-6.14s;animation-duration:7.35s"><use href="#petal"/></g></g>
+<g transform="translate(385,-20) scale(1.08)"><g class="fall" style="animation-delay:-1.49s;animation-duration:8.26s"><use href="#petal"/></g></g>
+<g transform="translate(372,-20) scale(1.19)"><g class="fall" style="animation-delay:-4.74s;animation-duration:7.58s"><use href="#petal"/></g></g>
+<g transform="translate(477,-20) scale(0.92)"><g class="fall" style="animation-delay:-4.8s;animation-duration:8.56s"><use href="#petal"/></g></g>
+<g transform="translate(767,-20) scale(1.46)"><g class="fall" style="animation-delay:-3.43s;animation-duration:8.32s"><use href="#petal"/></g></g>
+<g transform="translate(165,-20) scale(1.56)"><g class="fall" style="animation-delay:-5.16s;animation-duration:8.03s"><use href="#petal"/></g></g>
+<g transform="translate(370,-20) scale(0.82)"><g class="fall" style="animation-delay:-1.47s;animation-duration:9.72s"><use href="#petal"/></g></g>
+<g transform="translate(540,-20) scale(0.87)"><g class="fall" style="animation-delay:-2.98s;animation-duration:10.21s"><use href="#petal"/></g></g>
+<g transform="translate(865,-20) scale(0.93)"><g class="fall" style="animation-delay:-2.61s;animation-duration:8.83s"><use href="#petal"/></g></g>
+<g transform="translate(790,-20) scale(1.2)"><g class="fall" style="animation-delay:-2.23s;animation-duration:9.71s"><use href="#petal"/></g></g>
+<g transform="translate(651,-20) scale(1.59)"><g class="fall" style="animation-delay:-2.23s;animation-duration:11.06s"><use href="#petal"/></g></g>
+<g transform="translate(873,-20) scale(1.12)"><g class="fall" style="animation-delay:-1.95s;animation-duration:8.2s"><use href="#petal"/></g></g>
+<g transform="translate(822,-20) scale(1.08)"><g class="fall" style="animation-delay:-2.27s;animation-duration:9.59s"><use href="#petal"/></g></g>
+<g transform="translate(29,-20) scale(1.18)"><g class="fall" style="animation-delay:-9.9s;animation-duration:10.95s"><use href="#petal"/></g></g>
+<g transform="translate(198,-20) scale(1.16)"><g class="fall" style="animation-delay:-6.93s;animation-duration:11.78s"><use href="#petal"/></g></g>
+
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpjNDFhNDJhNS1mNjg1LTRlYjItYjE3NC00NzIyYTNiMTRkYTUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaPrR575GPvUyoUDMPmR7M1gAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyMzNkNjllMi00YjdkLTQ3ZDktOTEyYS1mMmE0ZjA5ZDVhZTFscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoyyXUfIapF08zd3EHkfiZfgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggRmKlX/0rL5ujz0TaY0DPpzY4r5p2m5Qk1BbytkiFJf6kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaL7nMfqwMliaTU+usFbV6JEAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIHUqyCoVk2DgUG6UJBvjxLwCtqk9yy3agdN4fOLaOL+4ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSyAZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmM0MWE0MmE1LWY2ODUtNGViMi1iMTc0LTQ3MjJhM2IxNGRhNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjYxZjYyNGJiLTA2MWYtNDc3Yy04Y2NlLWRjNjNiNTA3ZmFjYXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBGYqVf/Ssvm6PPRNpjQM+nNjivmnablCTUFvK2SIUl/qJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggAZBZJlND2wMoiqRKngYa3L4LdKFO2BRA3CzomHLESoSiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggAfQFdVWKuGfE4ox1Vn+71Q//sX2PL8y85pxWHB9FESJ0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQEND9c4CquMysKDcua//MOkfurs+3zFaRu8Y4tLICZimQ5AneyFZq7VbFKZQ86hPxWtwn23IaTtvnmdeKXvQobo=</c2pa:manifest></metadata></svg>
